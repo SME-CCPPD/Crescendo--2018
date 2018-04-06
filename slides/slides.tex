@@ -1,0 +1,375 @@
+%
+% Copyright (C) 2018 Nicola Bernardini nicb@sme-ccppd.org
+% 
+% This work is licensed under a Creative Commons License, and specifically the
+% 
+%   Creative Commons Attribution-ShareAlike 2.5 License
+%   http://creativecommons.org/licenses/by-sa/2.5/legalcode
+% 
+% Check http://www.creativecommons.org/ for more information on
+% Creative Commons Licenses and the Creative Commons Project.
+%
+% Title: ``Quale musica elettronica?''`
+% 
+% Abstract (italiano)
+% 
+% Questa escursione parte da un dato di fatto evidente e triviale: oggi
+% l'informatica pervade ogni aspetto della vita umana -- dagli aspetti pi\`u
+% eclatantemente pubblici sino a quelli pi\`u intimamente privati, passando
+% attraverso tutto ci\`o che ne popola il mezzo. Questa espansione ha
+% indubbiamente numerosi aspetti positivi e non pu\`o certo essere
+% stigmatizzata -- d'altra parte molto dell'interesse che riveste la
+% disciplina ``Musica Elettronica'' \`e senza dubbio legato alla
+% mercificazione pervasiva dell'informatica.
+%
+% Tuttavia, da tempo si \`e profilato un problema di importanza sostanziale
+% nell'insegnamento della musica elettronica: in un'era nella quale
+% \emph{qualsiasi elemento musicale} (esecuzione, tipologia, editoria,
+% comunicazione, ecc.) passa attraverso l'elettronica -- di cosa si parla
+% quando si parla, appunto, di \emph{musica elettronica}?
+%
+% Questo intervento intende presentare una breve analisi del problema
+% proponendone una soluzione tutta da discutere.
+%
+% Altre annotazioni
+%
+% Oggi qualsiasi sistema di produzione sonora passa da tecnologie elettroniche. 
+% Quindi tutti si sentono autorizzati ed ``esperti'' a insegnare. 
+% Una cosa sono le tecnologie utilizzate, altra cosa sono i concetti - fare
+% paralleli col mondo strumentale (vigili urbani che insegnano il flauto)7.
+% D'altra parte
+% Cosa vale la pena d'insegnare?
+% Idealmente, gli studenti devono essere meglio dei propri docenti.
+%
+% Set the macros below to whatever is appropriate in a given context
+%
+
+\newcommand{\imagedir}{../images}
+\newcommand{\templatedir}{../../templates/beamer/sme-ccppd}
+\documentclass[compress,\mode]{beamer}
+
+\usepackage{beamerthemeSME-CCPPD}
+\usepackage{beamercolorthemeSME-CCPPD}
+\usepackage{beamerinnerthemeSME-CCPPD}
+
+\usepackage{colortbl}
+\usepackage[italian]{babel}
+\usepackage{pgf}
+\usepackage{xspace}
+
+\usepackage{multimedia}
+\usepackage{xmpmulti}
+\usepackage{hyperref}
+\usepackage{gitinfo2}
+\newcommand{\rcstag}{rev.\gitAbbrevHash\ \ \gitAuthorDate\xspace}
+\usepackage{gensymb}
+
+\newcommand{\cpyear}{2018}
+\newcommand{\cpholder}{Nicola Bernardini}
+\newcommand{\cpholderemail}{nicola.bernardini@conservatoriopollini.it}
+
+% Use some nice templates
+
+%\beamertemplateshadingbackground{red!10}{structure!10}
+\beamertemplatetransparentcovereddynamic
+\beamertemplateballitem
+\beamertemplatenumberedballsectiontoc
+
+% My colors
+\definecolor{notdone}{gray}{0.35}
+
+%\usecolortheme[named=MyColor]{structure}
+%\usecolortheme[named=MyColor]{structure}
+\beamertemplateshadingbackground{white!10}{white!10}
+
+\input{\templatedir/macros}
+
+\title[Quale ME?]
+{%
+  Prima, durante, e dopo:\\
+  Quale Musica Elettronica?\\
+  {\tiny (\rcstag)}
+}
+
+\author{%
+  Nicola Bernardini\\
+    \href{mailto:\cpholderemail}{\cpholderemail}
+}
+\institute[SMERM]%
+{%
+  \href{http://www.conservatoriopollini.it}
+     {Conservatorio di Musica ``Cesare Pollini'' -- Padova}
+}
+\date[Crescendo! Sassari, 05-07/04/2018]{Sassari, Convegno ``Crescendo!'' -- 05-07/04/2018}
+
+\begin{document}
+\newcounter{ms}
+\setcounter{ms}{0}
+  
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Introduzione}
+
+\begin{frame}
+
+  \begin{itemize}[<+- | alert@+>]
+
+     \item Quale Musica Elettronica?
+
+     \item Cosa \emph{vale la pena} insegnare?
+
+     \item Quali strumenti?
+
+     \item Quali studenti?
+
+  \end{itemize}
+
+\end{frame}
+
+\section{Quale Musica Elettronica?}
+
+\begin{frame}
+
+% \framezoom<0pt,4cm><\textwidth,\textheight>(0pt,4cm)(\textwidth,6cm)
+\pause
+\begin{figure}
+  \pgfimage[height=0.95\textheight]<+->{\imagedir/volantino_corso_dj_2018-04-05_1}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{figure}
+  \pgfimage[width=0.95\textwidth]{\imagedir/volantino_big}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle<+->{Ladri di parole?}
+
+  %
+  % citare Jean-Luc Mélanchon
+  %
+
+  \uncover<+- | alert@+>{\Huge\centering Ladri di Parole!}
+
+  \uncover<+- | alert@+>{\normalsize%
+    \vspace{\baselineskip}
+    ``Ci rubano le parole per impedirci di pensare''\\
+    (Jean-Luc M\'elenchon in dialogo con Chantal Mouffe,
+    \url{https://www.youtube.com/watch?v=FtriFMxsOWw})%
+  }
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle<+->{``Generi'' o ``Funzioni''?}
+
+  \begin{itemize}[<+- | alert@+>]
+
+     \item Generi?
+
+     \item Funzioni: \uncover<+- | alert@+>{rito,}\uncover<+- | alert@+>{ intrattenimento,}\uncover<+- | alert@+>{ \emph{speculazione}}
+
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle<+->{Quale Musica Elettronica?}
+
+  \begin{itemize}[<+- | alert@+>]
+
+    \item l'innesto di nuove tecnologie nella musica si \`e
+            sempre legato alla sperimentazione (quindi alla funzione
+            speculativa e di ricerca della musica)
+
+    \item le tecnologie elettroniche e informatiche non fanno eccezione
+
+    \item di converso, l'intrattenimento \emph{usa} le tecnologie come
+            surrogato funzionale di elementi pre--esistenti
+
+  \end{itemize}
+
+\end{frame}
+
+\section{Cosa vale la pena insegnare?}
+
+\begin{frame}
+
+  \frametitle<+->{Cosa vale la pena insegnare?}
+
+  \begin{itemize}[<+- | alert@+>]
+
+     \item Regola empirica: \uncover<+- | alert@+>{si insegna tutto ci\`o la
+             cui spiegazione \uncover<+->{(non \emph{l'esercizio}!)} impegna
+             meno tempo dell'auto--apprendimento}
+             \uncover<+- | alert@+>{per gli amici: ``non s'insegna ci\`o che
+             si pu\`o pi\`u facilmente imparare da soli''}
+            
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle<+->{Quindi:}
+
+    \begin{itemize}[<+- | alert@+>]
+
+       \item \emph{non} s'insegna a vincere alla lotteria
+
+       \item \emph{non} s'insegna ad andare in bicicletta
+
+       \item \emph{non} s'insegna a scrivere sui muri dei bagni pubblici
+
+       \item \emph{non} s'insegna a fare l'amore
+
+       \item \emph{non} s'insegna a leggere la documentazione del software
+
+       \item \ldots
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle<+->{Invece:}
+
+    \begin{itemize}[<+- | alert@+>]
+
+       \item s'insegnano le radici storiche della musica elettronica
+
+       \item le modalit\`a di pensiero compositivo sorte con l'introduzione
+               delle tecnologie elettroniche e informatiche
+
+       \item i fondamenti teorici delle tecniche di sintesi e di analisi
+
+       \item la teoria dei segnali musicali
+
+       \item la psicoacustica sperimentale
+
+       \item \ldots
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle<+->{E:}
+
+    \begin{itemize}[<+- | alert@+>]
+
+       \item alcuni argomenti somigliano pericolosamente a materie
+             dei corsi conservatoriali pi\`u tradizionalisti:
+
+       \begin{itemize}[<+- | alert@+>]
+
+         \item programmazione\uncover<+- | alert@+>{ $\Rightarrow$ contrappunto, mottetto e fuga}
+
+         \item elettroacustica\uncover<+- | alert@+>{ $\Rightarrow$ armonia}
+
+         \item acustica e (soprattutto) psicoacustica\uncover<+- | alert@+>{ $\Rightarrow$ orchestrazione e strumentazione}
+
+         \item \ldots
+
+       \end{itemize}
+
+    \end{itemize}
+
+\end{frame}
+
+\section{Quali strumenti?}
+
+\refstepcounter{ms}
+\begin{frame}
+
+   \frametitle<+->{La scelta degli strumenti (\arabic{ms})}
+
+   \begin{itemize}[<+- | alert@+>]
+
+     \item gli strumenti condizionano il pensiero
+
+    \item una scelta consapevole \`e quindi innanzitutto una scelta
+            politico--ideologica:
+
+      \begin{itemize}[<+- | alert@+>]
+
+        \item \emph{non} si usano strumenti non--liberi e chiusi\ldots
+
+        \item \ldots ma s'insegnano le logiche di sviluppo libero, aperto e condiviso
+
+        \item \emph{non} si predilige un solo strumento con il quale si fa
+                tutto\ldots
+
+        \item \ldots ma s'insegna a scegliere lo strumento adatto per ciascun
+                problema (con il corollario dell'evoluzione strumentale)
+
+        \item \ldots
+
+      \end{itemize}
+
+   \end{itemize}
+
+\end{frame}
+
+\refstepcounter{ms}
+\begin{frame}
+
+   \frametitle<+->{La scelta degli strumenti (\arabic{ms})}
+
+   \begin{itemize}[<+- | alert@+>]
+
+     \item \emph{non} si spinge gli studenti a dotarsi di piattaforme
+             informatiche costose e strutturalmente inadatte al lavoro
+             professionale\ldots
+
+     \item ma s'insegna loro a utilizzare qualsiasi piattaforma (?) in maniera
+             seria e professionale
+
+   \end{itemize}
+
+\end{frame}
+
+\setcounter{ms}{0}
+\refstepcounter{ms}
+
+\begin{frame}
+
+  \frametitle<+->{Quali studenti?}
+
+  \begin{itemize}[<+- | alert@+>]
+
+    \item Va operata una scelta: \uncover<+->{corsi
+            esclusivi\ldots}\uncover<+->{ o corsi inclusivi?}
+
+    \item Esiste ancora la nozione di ``talento musicale''?
+
+    \item \ldots o la qualit\`a si trova all'interno della quantit\`a?
+            \uncover<+->{(nozione pi\`u faticosa da gestire, per\`o)}
+
+  \end{itemize}
+
+\end{frame}
+
+\refstepcounter{ms}
+\begin{frame}
+
+  \frametitle<+->{Quali sono i migliori?}
+
+  \begin{center}
+    Gli studenti migliori sono quelli che si diplomano
+    essendo diventati pi\`u bravi dei propri docenti.
+  \end{center}
+
+\end{frame}
+
+\end{document}
